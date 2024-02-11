@@ -6,6 +6,7 @@ const dataset =
   import.meta.env.PUBLIC_SANITY_STUDIO_DATASET! ||
   import.meta.env.PUBLIC_SANITY_DATASET!;
 
+
 // Feel free to remove this check if you don't need it
 // if (!projectId || !dataset) {
 //   throw new Error(
@@ -16,7 +17,7 @@ const dataset =
 //     )}`
 //   );
 // }
-
+import { vercelDeployTool } from 'sanity-plugin-vercel-deploy'
 import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
@@ -36,8 +37,13 @@ export default defineConfig({
       site_url: "https://new-sanity-mu.vercel.app/" },
  
   
-  plugins: [deskTool(), visionTool()],
+  plugins: [deskTool(), visionTool(), vercelDeployTool()],
   schema: {
     types: schemaTypes,
   },
 });
+
+
+
+
+
