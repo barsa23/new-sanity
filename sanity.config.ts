@@ -26,7 +26,15 @@ export default defineConfig({
   name: "project-name",
   title: "Project Name",
   projectId: "5zh25q8a",
-    dataset: "production",
+  dataset: "production",
+  backend: {
+      name: "github",
+      branch: "main",
+      repo: "barsa23/new-sanity",
+      publish_mode: "editorial_workflow" ,
+      squash_merges: true },
+ 
+  
   plugins: [deskTool(), visionTool()],
   schema: {
     types: schemaTypes,
