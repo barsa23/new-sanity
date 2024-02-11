@@ -27,12 +27,13 @@ export default defineConfig({
   title: "Project Name",
   projectId: "5zh25q8a",
   dataset: "production",
-  backend: {
+    backend: {
       name: "github",
       branch: "main",
       repo: "barsa23/new-sanity",
-      publish_mode: "editorial_workflow" ,
-      squash_merges: true },
+      publish_mode: "editorial_workflow",
+      squash_merges: true,
+      site_url: "https://new-sanity-mu.vercel.app/" },
  
   
   plugins: [deskTool(), visionTool()],

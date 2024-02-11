@@ -39,6 +39,7 @@ export default defineConfig({
     branch: "main",
     repo: "barsa23/new-sanity",
     publish_mode: "editorial_workflow" ,
-    squash_merges: true },
+    squash_merges: true,
+    site_url: "https://new-sanity-mu.vercel.app/" },
 
 });
