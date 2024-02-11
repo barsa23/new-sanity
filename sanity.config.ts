@@ -25,8 +25,8 @@ import { schemaTypes } from "./schema";
 export default defineConfig({
   name: "project-name",
   title: "Project Name",
-  projectId,
-  dataset,
+  projectId: "5zh25q8a",
+    dataset: "production",
   plugins: [deskTool(), visionTool()],
   schema: {
     types: schemaTypes,
