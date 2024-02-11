@@ -11,9 +11,10 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'autor',
-      title: 'Autor',
-      type: 'string',
+      name: 'author',
+      title: 'Author',
+      type: 'reference',
+      to: {type: 'author'},
     }),
     defineField({
       name: 'slug',
