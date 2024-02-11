@@ -18,31 +18,12 @@ export default {
         },
       },
       {
-        name: 'image',
-        title: 'Image',
-        type: 'image',
+        name: 'bio',
+        title: 'bio',
+        type: 'string',
         options: {
-          hotspot: true,
+          maxLength: 96,
         },
       },
-      {
-        name: 'bio',
-        title: 'Bio',
-        type: 'array',
-        of: [
-          {
-            title: 'Block',
-            type: 'block',
-            styles: [{title: 'Normal', value: 'normal'}],
-            lists: [],
-          },
-        ],
-      },
-    ],
-    preview: {
-      select: {
-        title: 'name',
-        media: 'image',
-      },
-    },
+    ]
   }
