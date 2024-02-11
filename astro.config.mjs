@@ -33,5 +33,12 @@ export default defineConfig({
     // `false` if you want to ensure fresh data
     apiVersion: "2023-03-20" // Set to date of setup to use the latest API version
   }), react() // Required for Sanity Studio
-  ]
+  ],
+  backend: {
+    name: "github",
+    branch: "main",
+    repo: "barsa23/new-sanity",
+    publish_mode: "editorial_workflow" ,
+    squash_merges: true },
+
 });
