@@ -23,7 +23,7 @@ export interface Post {
   _createdAt: string;
   title?: string;
   slug: Slug;
-  autor?: string;
+  author?: string;
   excerpt?: string;
   mainImage?: ImageAsset;
   body: PortableTextBlock[];
